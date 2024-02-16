@@ -1,0 +1,25 @@
+{
+    "system": {
+        "gateway": {
+            "uri": "mqtt://localhost",
+            "username": "kais",
+            "password": "Baya1974"
+        },
+        "options": {
+            "qos": 2
+        },
+        "topics": {
+            "subscriptions": [
+                "web/system/state",
+                "web/system-node/state",
+                "web/system-node/event",
+                "web/system-node/event/humidity",
+                "web/system-node/event/proximity",
+                "web/system-node/event/relay",
+                "web/system-node/event/temperature",
+                "web/system-node/event/temperature-humidity"
+            ],
+            "publish": ["system/status" , "system-node/satus" , "system-node/action"]
+        }
+    }
+}
